@@ -280,15 +280,6 @@ fill: currentColor;
 
 }
 
-.command-service-btn { 
-
-    display: inline-block;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    
-
-}
 
 /*Modal window*/
 
@@ -628,6 +619,7 @@ fill:var(--color-button-hover);
 }
 
 /* quality descripion*/
+
 .section-occupation {
 
     padding-bottom: 94px;
@@ -635,66 +627,48 @@ fill:var(--color-button-hover);
 
 
 .section {
-    width:1600px;
+    
     padding-top: 94px;
     padding-bottom: 94px;
     margin: auto;
 
 }
 
-.list-quality-container {
 
-    width: 1200px;
-    margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
 
-  
-}
-
-.list-quality-flex {
+.list {
     
     margin: 0;
     display: flex;
     justify-content: space-between;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
 
     padding: 0;
-
-    
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 
-.quality-icon-space {
+.list__image {
+
     width: 270px;
     height: 120px;
     margin: 0;
     margin-bottom: 30px;
     
-
     display: flex;
     justify-content: center;
     align-items: center;    
+
     background: #F5F4FA;
     border-radius: 4px;
 }
 
-.quality-icon {
-    
-    width: 70px;
-    height: 70px;
-    
-}
 
-.quality-item {
-    width: 270px;
-
-}
-
-
-
-.quality-title {
+.list__heading {
     margin:0 ;
     margin-bottom:10px ;
 
@@ -708,9 +682,9 @@ fill:var(--color-button-hover);
     
 }
 
-.quality-definition {
-    margin:0 ;
+.list__description {
 
+    margin:0 ;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -725,30 +699,15 @@ fill:var(--color-button-hover);
 /*occupation*/
     
 
-.img-activity{
 
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    
-}
 
-.occupation-item-container > img {
-    display: block;
-    margin: 0;
-}
-
-.occupation-item-container {
+.list__item-occupation {
 
    position: relative;
 
 }
 
-.service-label {
+.list__label {
 
     position: absolute;
     top: 224px;
@@ -758,12 +717,11 @@ fill:var(--color-button-hover);
     height: 70px;
     padding: 27px 0;
     margin: 0;
-
     background-color: rgba(47, 48, 58, 0.8);
    
 }
 
-.occupation-name {
+.list__name {
 
     display: block;
     margin: 0;
@@ -1083,14 +1041,18 @@ transition-delay: 0;
 }
 
 .portfolio-list  {
-   
-    padding: 0;
-    margin: 0;
+
+    width: 1600px;
+    padding-left:215px;
+    padding-right: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
 
     display: flex;
     flex-wrap: wrap ;
     justify-content: center;
-    gap: 30px;
+    
     list-style-type: none;
     
     
@@ -1295,7 +1257,7 @@ footer > a {
 .button {
     width:200px;
     height: 50px;
-    
+
     line-height: 1.6;
     font-weight: 700; 
     letter-spacing: 0.06em;
