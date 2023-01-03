@@ -1,17 +1,10 @@
 :root {
-    --color-bckgr-primary:#F5F5F5;
     --color-bckgr-secondary: #FFFFFF; 
     --color-bckgr-footer:#2F303A;
     --color-bckgr-invert: #1B80BF;
-    --color-invert: #FFFFFF;
-
     --color-text-primary:#212121;
     --color-text-action: #2196F3;
-    --color-background-action: #FFFFFF;
-   
-    --color-heading-title: #212121;;
     --color-heading-subtitle:#757575;
-
     --color-button: #F5F4FA;
     --color-button-hover: #2196F3;
 }
@@ -35,7 +28,7 @@ body {
 }
 
 ::selection {
-    color: var(--color-invert);
+    color: var(--color-bckgr-secondary);
     background-color: var(--color-bckgr-invert);
 
 }
@@ -72,7 +65,7 @@ body {
     color: var (--color-button-hover);
 }
 
-.navigation-header {
+.main-nav__list {
 
     min-width: 45px;
     margin-top: 0;
@@ -101,7 +94,7 @@ body {
 }
 
 
-.nav-header {
+.main-nav__link {
 
     position: relative;
 
@@ -158,13 +151,13 @@ body {
 
 }
 
-.nav-header:hover,
-.nav-header:focus {
+.main-nav__link:hover,
+.main-nav__link:focus {
     color: var(--color-text-action);
 }
 
 
-.contact-header {
+.contact-header__link {
     text-decoration: none;
     display:flex;
     justify-content:space-between;
@@ -185,21 +178,21 @@ body {
 
 }
 
-.contact-header:hover,
-.contact-header:focus {
+.contact-header__link:hover,
+.contact-header__link:focus {
 
     color: var(--color-button-hover);
 
 }
 
-.contact-header:last-child {
+.contact-header__link:last-child {
 
 padding: 6px 0px;
 
 }
 
 
-.contact-icon {
+.contact-header__icon {
 margin-right: 10px;
 fill: currentColor;
 
@@ -207,7 +200,7 @@ fill: currentColor;
 
 
 
-.container-contact-header {
+.contact-header {
 
     margin: 0;
     padding: 0;
@@ -224,7 +217,7 @@ fill: currentColor;
 /*hero section*/
 
 
-.moto {
+.hero__text {
     width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
@@ -239,7 +232,7 @@ fill: currentColor;
    }
 
    
-   .hero {
+   .hero__image {
     max-width: 1600px;
     margin: auto;
     width: 696px;
@@ -253,7 +246,7 @@ fill: currentColor;
     flex-direction: column;
     align-items: center;
 }
-.hero-container {
+.hero {
 
     position: relative;
 
@@ -261,7 +254,7 @@ fill: currentColor;
     margin-left: auto;
     max-width: 1600px;
     height: 600px;
-    background-color: var(--color-bckgr-primary) ;
+    background-color: var(--color-bckgr-secondary) ;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url('../images/img-background.jpg');
@@ -273,23 +266,26 @@ fill: currentColor;
     
 }  
 
-
-
-.command-service-btn { 
-    display: inline-block;
+.button {
+    
     width: 200px;
     height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--color-background-action);
+    color: var(--color-bckgr-secondary);
+    background: var(--color-button-hover);
+
+}
+
+.command-service-btn { 
+
+    display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
     
 
 }
@@ -568,20 +564,6 @@ fill:var(--color-button-hover);
    margin-left: auto;
    margin-right: auto;
    
-   
-    width: 200px;
-    height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--color-background-action);
 
 
 }
@@ -932,7 +914,7 @@ fill:var(--color-button-hover);
 .icon-space:focus
  {
     background-color: var(--color-text-action);
-    fill: var(--color-invert);
+    fill: var(--color-bckgr-secondary);
 }
 
 
@@ -1283,7 +1265,7 @@ footer > a {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);;
-    fill: var(--color-invert);
+    fill: var(--color-bckgr-secondary);
     border-radius: 50%;
 
     transition-property: background-color;
@@ -1310,6 +1292,21 @@ footer > a {
     
 }
 
+.button {
+    width:200px;
+    height: 50px;
+    
+    line-height: 1.6;
+    font-weight: 700; 
+    letter-spacing: 0.06em;
+
+    color: var(--color-bckgr-secondary);
+    background-color: var(--color-text-action);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+} 
+
+
 .submit-button {
 
 
@@ -1318,20 +1315,7 @@ footer > a {
     align-items: center;
     margin-left: 163px;
     margin-top: 47px;
-
     gap:10px;
-
-
-    width:200px;
-    height: 50px;
-    line-height: 1.6;
-    font-weight: 700;
-    
-    
-    letter-spacing: 0.06em;
-    color: var(--color-bckgr-secondary);
-    background-color: #2196f3;
-   
         
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
