@@ -741,7 +741,7 @@ fill:var(--color-button-hover);
 
 
 /*team of studio*/
-.list-container-team {
+.background-team {
    
     padding-top: 94px;
     padding-bottom: 94px;
@@ -749,17 +749,7 @@ fill:var(--color-button-hover);
     background-color: #F5F4FA;
 }
 
-.team-items-container {
-    
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
 
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
 .team-section {
     
     margin-top: 94px;
@@ -772,9 +762,8 @@ fill:var(--color-button-hover);
 
 
 
-.team-item {
+.card {
 
-      
     text-align: center;
     margin: 0;
     background: #FFFFFF;
@@ -782,14 +771,14 @@ fill:var(--color-button-hover);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-card {
+.card__box {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 32px;
     padding-left: 32px;
 }
 
-.team-name {
+.card__name {
    
     width: content;
     margin: 0;
@@ -803,7 +792,7 @@ fill:var(--color-button-hover);
     text-align: center;
 }
 
-.team-function {
+.card__position {
     width: content;
     margin: 0;
     margin-bottom: 16px;
@@ -837,7 +826,7 @@ fill:var(--color-button-hover);
     padding: 30px 32px;
 }
 
-.social-list {
+.list-media {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -845,12 +834,13 @@ fill:var(--color-button-hover);
     padding-left: 0;
 }
 
-.social-item {
+.list-media__item {
     width: 44px;
     height: 44px;
     
 }
-.icon-space {
+
+.list-media__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -868,8 +858,8 @@ fill:var(--color-button-hover);
 }
 
   
-.icon-space:hover,
-.icon-space:focus
+.list-media__link:hover,
+.list-media__link:focus
  {
     background-color: var(--color-text-action);
     fill: var(--color-bckgr-secondary);
@@ -1297,16 +1287,10 @@ footer > a {
 
 
 /* our clients*/
-.clients-logo-block {
-    width:170px;
+
+.list-client__link {
+    width: 170px;
     height: 92px;
-
- 
-}
-
-.clients-logo-space {
-    width: 100%;
-    height:100%;
     padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -1322,8 +1306,8 @@ footer > a {
     
 }
 
-.clients-logo-space:hover,
-.clients-logo-space:focus {
+.list-client__link:hover,
+.list-client__link:focus {
  
     fill: var(--color-button-hover);
     border: 1px solid #2196F3;
