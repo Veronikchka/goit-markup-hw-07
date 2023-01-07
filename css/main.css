@@ -415,15 +415,13 @@ body {
   fill: currentColor;
 }
 
-/*Studio Page*/
-/*hero section*/
 .hero {
   position: relative;
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
   height: 600px;
-  background-color: var(--color-bckgr-secondary);
+  background-color: #FFFFFF;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-background.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-background.jpg");
   background-repeat: no-repeat;
@@ -497,7 +495,7 @@ body {
 
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0, 7);
-          transform: translate(-50%, -50%) scale(0, 7);
+  transform: translate(-50%, -50%) scale(0, 7);
 }
 
 .backdrop.is-hidden {

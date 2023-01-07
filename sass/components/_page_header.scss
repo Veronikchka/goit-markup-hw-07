@@ -66,14 +66,12 @@
     padding: 0;
 
     display: flex;
-    gap: 40px;
     justify-content: space-between;
+    gap: 40px;
 
     &__link {
         text-decoration: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include display(flex, space-between, center);
         padding: 6px 22px;
         font-family: Roboto;
         font-weight: 500;
